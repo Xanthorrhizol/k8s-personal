@@ -38,5 +38,5 @@ EOF
 sysctl --system
 
 mkdir -p /etc/containerd
-contaienrd config default > /etc/containerd/config.toml
+containerd config default > /etc/containerd/config.toml
 sed -i 's/SystemdCgroup = false/SystemdCgroup = true/g' /etc/containerd/config.toml
