@@ -15,7 +15,8 @@ playground
 - version: 1.24(latest release if it's possible)
 
 ## targets
-- k8s auto install on bare-metal [ ]
+- k8s auto install on bare-metal [x]
+  - need to test on fresh arch linux machine someday [ ]
 - kubectl to master from my laptop at anywhere [ ]
   - k8s api-server: advertise public ip too
   - (router) port forwarding

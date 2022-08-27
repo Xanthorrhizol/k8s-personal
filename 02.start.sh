@@ -25,7 +25,7 @@ if [ $# -gt 2 ]; then
 		INIT_COMMAND="${INIT_COMMAND}$(echo $@ | awk '{ print $'$i' }')"
 	done
 fi
-$($INIT_COMMAND)
+$($INIT_COMMAND) | tee start_result.log
 
 mkdir -p /root/.kube
 mkdir -p $ADMIN_KUBE_DIR
